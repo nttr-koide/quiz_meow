@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context="jp.co.atschool.quiz.QuizActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/countTextView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Ｑ1"
+            android:textColor="#99000000"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/frame_style"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="問題文を表示する"
+            android:textColor="#c8000000"
+            android:textSize="20dp" />
+
+        <!--- 押すと縮小するボタン -->
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical|center"
+            android:text="あと〜秒"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <com.example.nttr.quiz.PushButton
+            android:id="@+id/optionButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_style"
+            android:onClick="clickOption"
+            android:text="選択肢1" />
+
+        <!--&lt;!&ndash;- 押すと半透明のボタン &ndash;&gt;-->
+        <!--<com.example.rikimarukoide.quiz.AlphaButton-->
+        <!--android:id="@+id/button_sample02"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="@drawable/button_sample"-->
+        <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/optionButton1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="32dp"-->
+            <!--android:background="@drawable/button_style"-->
+            <!--android:onClick="clickOption"-->
+            <!--android:text="選択肢1" />-->
+
+        <!--- 押すと縮小するボタン -->
+        <com.example.nttr.quiz.PushButton
+            android:id="@+id/optionButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#c8000000"
+            android:background="@drawable/button_style"
+            android:onClick="clickOption"
+            android:text="選択肢2"
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/optionButton2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@drawable/button_style"-->
+            <!--android:onClick="clickOption"-->
+            <!--android:text="選択肢2" />-->
+
+        <!--- 押すと縮小するボタン -->
+        <com.example.nttr.quiz.PushButton
+            android:id="@+id/optionButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_style"
+            android:onClick="clickOption"
+            android:text="選択肢3"
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/optionButton3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@drawable/button_style"-->
+            <!--android:onClick="clickOption"-->
+            <!--android:text="選択肢3" />-->
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
